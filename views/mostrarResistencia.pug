@@ -1,0 +1,9 @@
+
+block content
+    form(method='GET')
+        h1 Buscar Resistencia
+        label(for="codigo_color") Codigo Color
+        input#codigo_color(type="text", name="codigo_color" , required, placeholder="123-09")
+        br
+        input#submit_btn(type="submit" value="Buscar")
+        include opciones.pug

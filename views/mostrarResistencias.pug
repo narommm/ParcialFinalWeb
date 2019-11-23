@@ -1,0 +1,18 @@
+//extends ../layout 
+
+block content
+    table.table
+        thead
+            tr
+                th(scope='col') Código
+                th(scope='col') Valor
+                th(scope='col') Precio
+                th(scope='col') Marca
+        tbody
+            each resistencia in resistencias
+                tr
+                    td=resistencia.codigo_color
+                    td=resistencia.valor_resistencia
+                    td=resistencia.precio
+                    td=resistencia.marca
+    include opciones.pug

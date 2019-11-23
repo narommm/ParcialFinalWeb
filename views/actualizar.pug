@@ -1,0 +1,19 @@
+//extends layout
+div
+    hi Actualizar Usuario
+    p Introduzca datos 
+        label(for="codigo_color") Código a actualizar
+        input#codigoColor(type="text", name="codigo_color" , required, placeholder="asdasd")
+        br
+        label(for="resistencia") Valor Resitencia:
+        input#valor_resistencia(type="text", name="valor_resistencia" , required, placeholder="asdasd")
+        br
+        label(for="resistencia") Precio
+        input#precio(type="text", name="precio" , required, placeholder="$12.50")
+        br
+        label(for="resistencia") Marca:
+        input#marca(type="text", name="marca" , required, placeholder="marca")
+        br
+        input#submit_btn2(type="submit" value="Update")
+    script(src='/javascripts/index.js')
+    include opciones.pug

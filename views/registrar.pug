@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+  h1.display-4.m-b-2 Agrega una Resistencia
+  form(method='POST')
+    div.form-group
+      label(for='codigo_color') Codigo Color:
+      input#codigoColor(type='text', placeholder='123-9' name='codigo_color')
+    div.form-group
+      label(for='resistencia') Valor Resistencia:
+      input#valor_resistencia(type='text', placeholder='12345-0001' name='valor_resistencia')
+    div.form-group
+      label(for='resistencia') Precio:
+      input#precio(type='text', placeholder='$12.50' name='precio')
+    div.form-group
+      label(for='resistencia') Marca:
+      input#marca(type='text' name='marca')
+    button.btn.btn-primary(type='submit') Sign up
+    include opciones.pug

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+        h1 Borrar Resistencia
+        label(for="codigo_color") Codigo Color
+        input#username(type="text", name="codigo_color" , required, placeholder="123-09")
+        br
+        input#submit_btn(type="submit" value="Borrar")
+        script(src='/javascripts/indexD.js')
+        include opciones.pug
